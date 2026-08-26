@@ -5291,3 +5291,138 @@ body.social-modal-open {
     }
 
 }
+
+.credits-section {
+    padding: 100px 7% 110px;
+    background:
+        linear-gradient(
+            135deg,
+            #eeeeeb 0%,
+            #e3e3df 50%,
+            #d7d7d3 100%
+        );
+    position: relative;
+    overflow: hidden;
+}
+
+.credits-section::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.35);
+    top: -180px;
+    right: -120px;
+}
+
+.credits-section::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.22);
+    bottom: -160px;
+    left: -100px;
+}
+
+.credits-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: auto;
+    padding: 55px 65px;
+    background: rgba(255,255,255,.65);
+    border: 1px solid rgba(60,60,60,.12);
+    border-radius: 18px;
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.10);
+    backdrop-filter: blur(8px);
+}
+
+.credits-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 7px 14px;
+    border-radius: 20px;
+    background: #333;
+    color: white;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.credits-content h2 {
+    margin: 0 0 28px;
+    font-family:
+        Georgia,
+        'Times New Roman',
+        serif;
+    font-size: 42px;
+    line-height: 1.1;
+    color: #222;
+}
+
+.credits-content h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin-top: 18px;
+    background: #777;
+    border-radius: 5px;
+}
+
+.credits-content p {
+    margin: 0 0 20px;
+    color: #454545;
+    font-family:
+        'Montserrat',
+        Arial,
+        sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.credits-content strong {
+    color: #222;
+    font-weight: 700;
+}
+
+.credits-final-message {
+    margin-top: 30px !important;
+    padding: 22px 25px;
+    border-left: 4px solid #555;
+    background: rgba(0,0,0,.045);
+    border-radius: 0 8px 8px 0;
+    font-family:
+        Georgia,
+        'Times New Roman',
+        serif !important;
+    font-style: italic;
+    font-size: 15px !important;
+    color: #333 !important;
+}
+
+@media (max-width: 700px) {
+
+    .credits-section {
+        padding: 70px 5% 80px;
+    }
+
+    .credits-content {
+        padding: 40px 28px;
+    }
+
+    .credits-content h2 {
+        font-size: 32px;
+    }
+
+    .credits-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+}
