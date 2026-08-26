@@ -1830,360 +1830,159 @@ body {
 
 
 
+.references-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 55px 40px;
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #e2e8f0,
+            #f1f5f9
+        );
+}
 
 .references-container {
-
+    width: 100%;
     max-width: 1400px;
-
-    margin: auto;
-
+    margin: 0 auto;
     display: grid;
-
-    grid-template-columns:
-        0.9fr 1.4fr;
-
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
     gap: 35px;
-
     align-items: start;
 }
 
+.credits-section {
+    width: 100%;
+    min-width: 0;
+}
 
-
+.bibliography-section {
+    width: 100%;
+    min-width: 0;
+}
 
 .credits-section,
 .bibliography-section {
-
     background:
         rgba(255, 255, 255, 0.96);
-
     border-radius: 20px;
-
     padding: 40px;
-
     box-shadow:
         0 10px 30px
         rgba(0, 0, 0, 0.10);
 }
 
-
-
-
-.page-label {
-
-    display: inline-block;
-
-    font-size: 12px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-    color: #475569;
-
-    margin-bottom: 5px;
-}
-
-
-
 .references-page h1 {
-
     font-size: 45px;
-
     margin: 5px 0 15px;
-
     color: #172033;
 }
 
+.page-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #475569;
+    margin-bottom: 5px;
+}
 
-
-.credits-intro,
 .bibliography-intro {
-
     color: #64748b;
-
     line-height: 1.7;
-
     margin-bottom: 30px;
 }
 
-
-
-
-.credit-list {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 12px;
-}
-
-
-
-
-.credit-member {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-
-    padding: 15px;
-
-    background: #f8fafc;
-
-    border-radius: 12px;
-
-    border-left: 4px solid #64748b;
-
-    transition: 0.3s;
-}
-
-
-.credit-member:hover {
-
-    transform:
-        translateX(5px);
-
-    background: #f1f5f9;
-}
-
-
-
-
-.credit-number {
-
-    min-width: 38px;
-
-    height: 38px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background: #334155;
-
-    color: white;
-
-    border-radius: 50%;
-
-    font-size: 12px;
-
-    font-weight: bold;
-}
-
-
-
-.credit-member h2 {
-
-    font-size: 17px;
-
-    margin: 0 0 4px;
-
-    color: #1e293b;
-}
-
-
-.credit-member p {
-
-    margin: 0;
-
-    color: #64748b;
-
-    font-size: 13px;
-}
-
-
-
-.website-credit {
-
-    margin-top: 25px;
-
-    padding: 25px;
-
-    border-radius: 15px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #334155,
-            #475569
-        );
-
-    color: white;
-}
-
-
-.website-credit h2 {
-
-    margin-top: 0;
-
-    margin-bottom: 10px;
-}
-
-
-.website-credit p {
-
-    color: #e2e8f0;
-
-    line-height: 1.6;
-}
-
-
-.credit-line {
-
-    margin-top: 10px;
-
-    color: #f1f5f9;
-
-    font-size: 14px;
-}
-
-
-
 .apa-note {
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     padding: 14px 18px;
-
     margin-bottom: 25px;
-
     background: #f1f5f9;
-
     border-radius: 10px;
-
     border-left: 5px solid #334155;
 }
 
-
 .apa-note strong {
-
     color: #1e293b;
 }
 
-
 .apa-note span {
-
     color: #64748b;
-
     font-size: 14px;
 }
 
-
-
 .reference-list {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 22px;
 }
 
-
 .reference {
-
-    padding: 0 10px;
-
+    padding: 0 10px 18px;
     border-bottom: 1px solid #e2e8f0;
-
-    padding-bottom: 18px;
 }
 
-
 .reference p {
-
     margin: 0;
-
     color: #334155;
-
     font-size: 15px;
-
     line-height: 1.7;
-
     padding-left: 35px;
-
     text-indent: -35px;
 }
 
-
 .reference em {
-
     font-style: italic;
 }
 
-
-
 .apa-reminder {
-
     margin-top: 30px;
-
     padding: 22px;
-
     background: #f8fafc;
-
     border-radius: 12px;
-
     border-left: 5px solid #64748b;
 }
 
-
 .apa-reminder h2 {
-
     font-size: 20px;
-
     margin: 0 0 8px;
-
     color: #1e293b;
 }
 
-
 .apa-reminder p {
-
     color: #64748b;
-
     line-height: 1.6;
-
     margin: 0;
 }
 
-
-@media (max-width: 1000px) {
-
-    .references-container {
-
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .references-page {
-
-        padding: 30px 20px;
+        padding: 35px 20px;
     }
 
+    .references-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
 
     .credits-section,
     .bibliography-section {
-
         padding: 25px;
     }
 
-
     .references-page h1 {
-
         font-size: 36px;
+    }
+
+    .apa-note {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
     }
 
 }
