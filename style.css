@@ -5076,5 +5076,318 @@ body.social-modal-open {
 
 
 }
-=======
->>>>>>> e1f2d9bdb55dda6be4ed9669146987a102004656
+.references-page {
+    width: 100%;
+    background: #e7e7e3;
+}
+
+.references-container {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding: 80px 0 100px;
+    align-items: start;
+}
+
+.credits-section {
+    position: relative;
+    overflow: hidden;
+    padding: 45px;
+    background:
+        linear-gradient(
+            145deg,
+            #f1f1ee 0%,
+            #deded9 100%
+        );
+    border-radius: 18px;
+    border: 1px solid rgba(0,0,0,.10);
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.10);
+}
+
+.credits-section::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.30);
+    top: -120px;
+    right: -100px;
+}
+
+.credits-section::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.20);
+    bottom: -100px;
+    left: -80px;
+}
+
+.credits-content {
+    position: relative;
+    z-index: 2;
+}
+
+.credits-label {
+    display: inline-block;
+    padding: 7px 14px;
+    margin-bottom: 14px;
+    background: #333;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.credits-content > h1 {
+    margin: 0 0 30px;
+    color: #222;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.thanks-card {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 22px;
+    margin-bottom: 18px;
+    background: rgba(255,255,255,.62);
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 12px;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.thanks-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,.85);
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.10);
+}
+
+.thanks-icon {
+    width: 45px;
+    min-width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.thanks-card h2 {
+    margin: 0 0 8px;
+    color: #222;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+    font-size: 20px;
+}
+
+.thanks-card p {
+    margin: 0;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.thanks-card strong {
+    color: #222;
+}
+
+.credits-final-message {
+    margin: 30px 0 0;
+    padding: 20px 22px;
+    background: rgba(0,0,0,.05);
+    border-left: 4px solid #555;
+    border-radius: 0 8px 8px 0;
+    color: #444;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.credits-final-message strong {
+    color: #222;
+}
+
+.bibliography-section {
+    padding: 45px;
+    background: #f4f4f1;
+    border-radius: 18px;
+    border: 1px solid rgba(0,0,0,.10);
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.08);
+}
+
+.bibliography-section .page-label {
+    display: inline-block;
+    padding: 7px 14px;
+    margin-bottom: 14px;
+    background: #333;
+    color: white;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bibliography-section h1 {
+    margin: 0 0 15px;
+    color: #222;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+    font-size: 42px;
+}
+
+.bibliography-intro {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.apa-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding: 14px 18px;
+    background: #e3e3df;
+    border-left: 4px solid #555;
+    border-radius: 5px;
+}
+
+.apa-note strong {
+    color: #222;
+}
+
+.apa-note span {
+    color: #666;
+}
+
+.reference-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.reference {
+    padding: 18px 20px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.07);
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.reference:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.08);
+}
+
+.reference p {
+    margin: 0;
+    color: #444;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.reference .author {
+    font-weight: 700;
+    color: #222;
+}
+
+.reference a {
+    color: #555;
+    word-break: break-word;
+}
+
+.apa-reminder {
+    margin-top: 25px;
+    padding: 22px;
+    background: #e3e3df;
+    border-radius: 8px;
+}
+
+.apa-reminder h2 {
+    margin: 0 0 10px;
+    color: #222;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+    font-size: 20px;
+}
+
+.apa-reminder p {
+    margin: 0;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+@media (max-width: 950px) {
+
+    .references-container {
+        grid-template-columns: 1fr;
+        width: min(800px, 92%);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .references-container {
+        width: 90%;
+        padding: 50px 0 70px;
+    }
+
+    .credits-section,
+    .bibliography-section {
+        padding: 30px 24px;
+    }
+
+    .credits-content > h1,
+    .bibliography-section h1 {
+        font-size: 32px;
+    }
+
+    .thanks-card {
+        padding: 18px;
+    }
+
+    .thanks-icon {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+}
